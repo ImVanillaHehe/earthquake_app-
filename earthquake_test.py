@@ -4,9 +4,9 @@ url = 'https://earthquake.usgs.gov/fdsnws/event/1/query?'
 
 start_time_in_json = input('Введите starttime: ')
 end_time_in_json = input('Введите endtime: ')
-latitude_in_json = input(": ")
-longitude_in_json = input(': ')
-max_radius_km_in_json = input(': ')
+latitude_in_json = input("Введите latitude: ")
+longitude_in_json = input('Введте longitude: ')
+max_radius_km_in_json = input('Введите радиус(в км): ')
 
 responced = requests.get(url, headers={'Accept': 'application/json'}, params={
     'format': 'geojson',
